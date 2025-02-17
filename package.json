@@ -45,6 +45,7 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "^16.2.0",
     "@angular/localize": "^16.2.0",
+    "@auth0/angular-jwt": "^5.2.0",
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
     "cypress": "^14.0.2",

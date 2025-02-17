@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@angular/animations':
     specifier: ^16.2.0
@@ -97,6 +93,9 @@ devDependencies:
   '@angular/localize':
     specifier: ^16.2.0
     version: 16.2.12(@angular/compiler-cli@16.2.0)(@angular/compiler@16.2.0)
+  '@auth0/angular-jwt':
+    specifier: ^5.2.0
+    version: 5.2.0(@angular/common@16.2.0)
   '@jest/globals':
     specifier: ^29.7.0
     version: 29.7.0
@@ -582,6 +581,15 @@ packages:
 
   /@assemblyscript/loader@0.10.1:
     resolution: {integrity: sha512-H71nDOOL8Y7kWRLqf6Sums+01Q5msqBW2KhDUTemh1tvY04eSkSXrK0uj/4mmY0Xr16/3zyZmsrxN7CKuRbNRg==}
+    dev: true
+
+  /@auth0/angular-jwt@5.2.0(@angular/common@16.2.0):
+    resolution: {integrity: sha512-9FS2L0QwGNlxA/zgeehCcsR9CZscouyXkoIj1fODM36A8BLfdzg9k9DWAXUQ2Drjk0AypGAFzeNZR4vsLMhdeQ==}
+    peerDependencies:
+      '@angular/common': '>=14.0.0'
+    dependencies:
+      '@angular/common': 16.2.0(@angular/core@16.2.0)(rxjs@7.8.0)
+      tslib: 2.6.3
     dev: true
 
   /@babel/code-frame@7.22.13:
@@ -7577,6 +7585,8 @@ packages:
     peerDependenciesMeta:
       webpack:
         optional: true
+      webpack-sources:
+        optional: true
     dependencies:
       webpack: 5.88.2(esbuild@0.18.17)
       webpack-sources: 3.2.3
@@ -10469,3 +10479,7 @@ packages:
     resolution: {integrity: sha512-7m3hNNyswsdoDobCkYNAy5WiUulkMd3+fWaGT9ij6iq3Zr/IwJo4RMCYPSDjT+r7tnPErmY9sZpKhWQ8S5k6XQ==}
     dependencies:
       tslib: 2.3.0
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

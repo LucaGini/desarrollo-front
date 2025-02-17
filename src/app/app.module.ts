@@ -59,6 +59,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 
 
 import { TokenInterceptorService } from './services/token-interceptor.service';
+import { JwtModule } from '@auth0/angular-jwt';
 
 @NgModule({
   declarations: [
@@ -115,7 +116,14 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
     MatMenuModule,
     MatTabsModule,
     CommonModule,
-    AdminModule
+    AdminModule,
+    JwtModule.forRoot({
+          config: {
+            tokenGetter: () => localStorage.getItem('token'),
+            allowedDomains: ['desarrollo-back-production.up.railway.app'], 
+            disallowedRoutes: [], 
+          },
+        })
   ],
   exports: [
   
