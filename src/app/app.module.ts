@@ -117,13 +117,13 @@ import { JwtModule } from '@auth0/angular-jwt';
     MatTabsModule,
     CommonModule,
     AdminModule,
-    JwtModule.forRoot({
+    /*JwtModule.forRoot({
           config: {
             tokenGetter: () => localStorage.getItem('token'),
             allowedDomains: ['desarrollo-back-production.up.railway.app/'], 
             disallowedRoutes: [], 
           },
-        })
+        })*/
   ],
   exports: [
   
