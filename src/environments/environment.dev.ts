@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://desarrollo-back.railway.internal'
+  apiUrl: 'http://localhost:3000/'
 };
