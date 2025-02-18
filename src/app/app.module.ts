@@ -120,7 +120,7 @@ import { JwtModule } from '@auth0/angular-jwt';
     JwtModule.forRoot({
           config: {
             tokenGetter: () => localStorage.getItem('token'),
-            allowedDomains: ['desarrollo-back-production.up.railway.app'], 
+            allowedDomains: ['desarrollo-back-production.up.railway.app/'], 
             disallowedRoutes: [], 
           },
         })
