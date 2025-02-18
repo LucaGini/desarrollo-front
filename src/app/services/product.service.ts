@@ -16,14 +16,12 @@ export class ProductService {
     private http: HttpClient,
     private router: Router
   ) {
-    console.log('env', environment.apiUrl);
-    this.loadProducts()
+    this.loadProducts();
   }
 
 loadProducts() {
     this.findAll().subscribe((response:any)=> {
       this.productsSubject.next(response.data);});
-      console.log('env', environment.apiUrl);
   }
 
   private getAuthHeaders(): HttpHeaders {
@@ -40,7 +38,6 @@ loadProducts() {
   }
 
   findAll(): Observable<any[]> {
-    console.log('env', environment.apiUrl);
     return this.http.get<any[]>(`${this.URL}/products`);
   }
 
