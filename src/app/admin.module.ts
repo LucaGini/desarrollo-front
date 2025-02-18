@@ -75,13 +75,5 @@ import {MatTabsModule} from '@angular/material/tabs';
   exports: [
   
   ],
-//   providers: [
-//     {
-//       provide: HTTP_INTERCEPTORS,
-//       useClass: TokenInterceptorService,
-//       multi: true
-//     }
-//   ],
-  //bootstrap: [AppComponent]
 })
 export class AdminModule { }
